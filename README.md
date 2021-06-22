@@ -17,5 +17,5 @@ host someinternalhost
    ProxyCommand ssh -i ~/.ssh/appuser -A appuser@84.252.129.182 -p 22 -W %h:%p
 ```
 #Для задания cloud-testapp
-testapp_IP = 217.28.230.36
+testapp_IP = 217.28.228.96
 testapp_port = 9292
