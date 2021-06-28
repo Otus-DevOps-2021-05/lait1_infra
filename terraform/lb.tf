@@ -7,6 +7,10 @@ resource "yandex_lb_target_group" "reddit_target_group" {
     address = yandex_compute_instance.app.network_interface.0.ip_address
     subnet_id = var.subnet_id
   }
+  target {
+    address = yandex_compute_instance.app2.network_interface.0.ip_address
+    subnet_id = var.subnet_id
+  }
 }
 
 resource "yandex_lb_network_load_balancer" "lb" {
