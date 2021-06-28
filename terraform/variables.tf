@@ -8,6 +8,11 @@ variable zone {
   description = "Zone"
   default     = "ru-central1-a"
 }
+variable region_id {
+  # Значение региона по умолчанию
+  description = "region"
+  default     = "ru-central1"
+}
 variable public_key_path {
   description = "Path to the public key used for ssh access"
 }
