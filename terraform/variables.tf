@@ -28,3 +28,7 @@ variable subnet_id {
 variable token {
   description = "Token"
 }
+variable instance_count {
+  description = "count instances"
+  default     = 2
+}
