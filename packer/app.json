@@ -10,7 +10,6 @@
       "ssh_username": "ubuntu",
       "platform_id": "standard-v2",
       "zone": "ru-central1-a",
-      "subnet_id": "e9bgjuqpjf3sdtdbf02r",
       "use_ipv4_nat": true
     }
   ],
@@ -18,11 +17,6 @@
     {
       "type": "shell",
       "script": "scripts/install_ruby.sh",
-      "execute_command": "sudo {{.Path}}"
-    },
-    {
-      "type": "shell",
-      "script": "scripts/install_mongodb.sh",
       "execute_command": "sudo {{.Path}}"
     }
   ]
