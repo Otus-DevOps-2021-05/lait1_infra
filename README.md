@@ -1,14 +1,14 @@
 # lait1_infra
 lait1 Infra repository
 
-#Подключение к внутреннему хосту
+###Подключение к внутреннему хосту
 С помощью ProxyCommand в конфиге ssh
 ssh someinternalhost попадаем сразу на нужный хост без внешнего IP
 
 bastion_IP = 84.252.129.182
 someinternalhost_IP = 10.128.0.19
 
-#Настройка ~/.ssh/config
+###Настройка ~/.ssh/config
 ```
 host someinternalhost
    Hostname 10.128.0.19
