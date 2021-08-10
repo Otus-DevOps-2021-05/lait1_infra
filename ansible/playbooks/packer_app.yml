@@ -3,13 +3,15 @@
   hosts: all
   become: true
 
-  tasks:
-    - name: Install ruby
-      apt:
-        name: "{{ item }}"
-        state: present
-        update_cache: true
-      loop:
-        - ruby-full
-        - ruby-bundler
-        - build-essential
+  roles:
+    - app
+#  tasks:
+#    - name: Install ruby
+#      apt:
+#        name: "{{ item }}"
+#        state: present
+#        update_cache: true
+#      loop:
+#        - ruby-full
+#        - ruby-bundler
+#        - build-essential
